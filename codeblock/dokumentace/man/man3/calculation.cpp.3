@@ -1,0 +1,97 @@
+.TH "calculation.cpp" 3 "Sun Dec 17 2017" "Version 1.3" "Maticove operace Kvi0029" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+calculation.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <vector>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include 'funkce\&.h'\fP
+.br
+\fC#include <iomanip>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBgem\fP (std::vector< std::vector< double > > &matice)"
+.br
+.ti -1c
+.RI "long int \fBdeterminant\fP (std::vector< std::vector< double > > &matrix, long int &determ)"
+.br
+.ti -1c
+.RI "int \fBroot\fP (std::vector< std::vector< double > > &matrix, std::vector< double > &roots)"
+.br
+.ti -1c
+.RI "int \fBwhatToSave\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "long int determinant (std::vector< std::vector< double > > & matrix, long int & determ)"
+This function calculates determinant of the matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference for matrix with the data 
+.br
+\fIdeterm\fP empty variable for saving determinant 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+returns calculated determinant of the matrix 
+.RE
+.PP
+
+.SS "int gem (std::vector< std::vector< double > > & matrix)"
+This function calculates GEM 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference for matrix with the data 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+coefficient for making triangle shape
+.PP
+n+1 for matching with right side of matrix
+.PP
+after previews loop it have to be 0, if it isn't 
+.SS "int root (std::vector< std::vector< double > > & matrix, std::vector< double > & roots)"
+This function returns the real roots of the matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference for matrix with the data 
+.br
+\fIroots\fP vector of roots of the matrix 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+making root and beginning on the end
+.PP
+making root and beginning on the end 
+.SS "int whatToSave ()"
+This function asks about saving requirements 
+.PP
+\fBReturns:\fP
+.RS 4
+returns number which says what to save (1-gem, 2-determinant, 4- roots, theirs sums says combinatoins of them) 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Maticove operace Kvi0029 from the source code\&.

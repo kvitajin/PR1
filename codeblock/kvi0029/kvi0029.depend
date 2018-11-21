@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1513444378 source:/home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/calculation.cpp
+	<vector>
+	<iostream>
+	"funkce.h"
+	<iomanip>
+
+1513524323 /home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/funkce.h
+	<vector>
+	<string>
+
+1513445594 source:/home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/funkce.cpp
+	"funkce.h"
+	<iostream>
+	<iomanip>
+	<fstream>
+
+1513445305 source:/home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/main.cpp
+	<iostream>
+	<vector>
+	"funkce.h"
+	"out.h"
+	"calcilation.h"
+
+1513524349 /home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/out.h
+
+1513524335 /home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/calcilation.h
+	<vector>
+
+1513445801 source:/home/kvitajin/CLionProjects/vsb/pr/codeblock/kvi0029/out.cpp
+	"funkce.h"
+	<iostream>
+	<iomanip>
+	<fstream>
+	<sstream>
+

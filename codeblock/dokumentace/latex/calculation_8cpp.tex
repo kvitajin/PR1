@@ -1,0 +1,81 @@
+\hypertarget{calculation_8cpp}{}\section{/home/kvitajin/\+C\+Lion\+Projects/vsb/pr/sem\+\_\+2/calculation.cpp File Reference}
+\label{calculation_8cpp}\index{/home/kvitajin/\+C\+Lion\+Projects/vsb/pr/sem\+\_\+2/calculation.\+cpp@{/home/kvitajin/\+C\+Lion\+Projects/vsb/pr/sem\+\_\+2/calculation.\+cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}funkce.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{calculation_8cpp_ab9a07ac29b2541fb2b81c2949ad60662}{gem} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&matice)
+\item 
+long int \hyperlink{calculation_8cpp_ab08d8bee34a930b77dcd300c45ad73e5}{determinant} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&matrix, long int \&determ)
+\item 
+int \hyperlink{calculation_8cpp_aa355c9435e94a5736668a6cc23b446c8}{root} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&matrix, std\+::vector$<$ double $>$ \&roots)
+\item 
+int \hyperlink{calculation_8cpp_a015e157d4ea7fc8050e21c0da0f20348}{what\+To\+Save} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{calculation_8cpp_ab08d8bee34a930b77dcd300c45ad73e5}\label{calculation_8cpp_ab08d8bee34a930b77dcd300c45ad73e5}} 
+\index{calculation.\+cpp@{calculation.\+cpp}!determinant@{determinant}}
+\index{determinant@{determinant}!calculation.\+cpp@{calculation.\+cpp}}
+\subsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily long int determinant (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{matrix,  }\item[{long int \&}]{determ }\end{DoxyParamCaption})}
+
+This function calculates determinant of the matrix 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & dereference for matrix with the data \\
+\hline
+{\em determ} & empty variable for saving determinant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns calculated determinant of the matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{calculation_8cpp_ab9a07ac29b2541fb2b81c2949ad60662}\label{calculation_8cpp_ab9a07ac29b2541fb2b81c2949ad60662}} 
+\index{calculation.\+cpp@{calculation.\+cpp}!gem@{gem}}
+\index{gem@{gem}!calculation.\+cpp@{calculation.\+cpp}}
+\subsubsection{\texorpdfstring{gem()}{gem()}}
+{\footnotesize\ttfamily int gem (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{matrix }\end{DoxyParamCaption})}
+
+This function calculates G\+EM 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & dereference for matrix with the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+coefficient for making triangle shape
+
+n+1 for matching with right side of matrix
+
+after previews loop it have to be 0, if it isn\textquotesingle{}t \mbox{\Hypertarget{calculation_8cpp_aa355c9435e94a5736668a6cc23b446c8}\label{calculation_8cpp_aa355c9435e94a5736668a6cc23b446c8}} 
+\index{calculation.\+cpp@{calculation.\+cpp}!root@{root}}
+\index{root@{root}!calculation.\+cpp@{calculation.\+cpp}}
+\subsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily int root (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{matrix,  }\item[{std\+::vector$<$ double $>$ \&}]{roots }\end{DoxyParamCaption})}
+
+This function returns the real roots of the matrix 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & dereference for matrix with the data \\
+\hline
+{\em roots} & vector of roots of the matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+making root and beginning on the end
+
+making root and beginning on the end \mbox{\Hypertarget{calculation_8cpp_a015e157d4ea7fc8050e21c0da0f20348}\label{calculation_8cpp_a015e157d4ea7fc8050e21c0da0f20348}} 
+\index{calculation.\+cpp@{calculation.\+cpp}!what\+To\+Save@{what\+To\+Save}}
+\index{what\+To\+Save@{what\+To\+Save}!calculation.\+cpp@{calculation.\+cpp}}
+\subsubsection{\texorpdfstring{what\+To\+Save()}{whatToSave()}}
+{\footnotesize\ttfamily int what\+To\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function asks about saving requirements \begin{DoxyReturn}{Returns}
+returns number which says what to save (1-\/gem, 2-\/determinant, 4-\/ roots, theirs sums says combinatoins of them) 
+\end{DoxyReturn}

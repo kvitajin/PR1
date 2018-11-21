@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/du2_funkcni10.dir/main.cpp.o  -o du2_funkcni10 

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['preparestring',['prepareString',['../out_8cpp.html#adc5e5fac975dc7d25fc770d41d6c2f00',1,'prepareString(std::string &amp;out, char where, int what, long int &amp;determ, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;triangle, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;matrix, std::vector&lt; double &gt; &amp;roots):&#160;out.cpp'],['../out_8h.html#adc5e5fac975dc7d25fc770d41d6c2f00',1,'prepareString(std::string &amp;out, char where, int what, long int &amp;determ, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;triangle, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;matrix, std::vector&lt; double &gt; &amp;roots):&#160;out.cpp']]],
+  ['printmatrix',['printMatrix',['../funkce_8cpp.html#a4236a333e940b984fa39620f93590ca8',1,'printMatrix(std::vector&lt; std::vector&lt; double &gt; &gt; &amp;matrix):&#160;funkce.cpp'],['../funkce_8h.html#a4236a333e940b984fa39620f93590ca8',1,'printMatrix(std::vector&lt; std::vector&lt; double &gt; &gt; &amp;matrix):&#160;funkce.cpp']]]
+];

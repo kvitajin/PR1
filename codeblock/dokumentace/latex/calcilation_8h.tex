@@ -1,0 +1,78 @@
+\hypertarget{calcilation_8h}{}\section{/home/kvitajin/\+C\+Lion\+Projects/vsb/pr/sem\+\_\+2/calcilation.h File Reference}
+\label{calcilation_8h}\index{/home/kvitajin/\+C\+Lion\+Projects/vsb/pr/sem\+\_\+2/calcilation.\+h@{/home/kvitajin/\+C\+Lion\+Projects/vsb/pr/sem\+\_\+2/calcilation.\+h}}
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{calcilation_8h_a8cefea3aed229212e275130253a8c28d}{gem} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&matrix)
+\item 
+long int \hyperlink{calcilation_8h_ab08d8bee34a930b77dcd300c45ad73e5}{determinant} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&matrix, long int \&determ)
+\item 
+int \hyperlink{calcilation_8h_aa355c9435e94a5736668a6cc23b446c8}{root} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&matrix, std\+::vector$<$ double $>$ \&roots)
+\item 
+int \hyperlink{calcilation_8h_a015e157d4ea7fc8050e21c0da0f20348}{what\+To\+Save} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{calcilation_8h_ab08d8bee34a930b77dcd300c45ad73e5}\label{calcilation_8h_ab08d8bee34a930b77dcd300c45ad73e5}} 
+\index{calcilation.\+h@{calcilation.\+h}!determinant@{determinant}}
+\index{determinant@{determinant}!calcilation.\+h@{calcilation.\+h}}
+\subsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily long int determinant (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{matrix,  }\item[{long int \&}]{determ }\end{DoxyParamCaption})}
+
+This function calculates determinant of the matrix 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & dereference for matrix with the data \\
+\hline
+{\em determ} & empty variable for saving determinant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns calculated determinant of the matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{calcilation_8h_a8cefea3aed229212e275130253a8c28d}\label{calcilation_8h_a8cefea3aed229212e275130253a8c28d}} 
+\index{calcilation.\+h@{calcilation.\+h}!gem@{gem}}
+\index{gem@{gem}!calcilation.\+h@{calcilation.\+h}}
+\subsubsection{\texorpdfstring{gem()}{gem()}}
+{\footnotesize\ttfamily int gem (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{matrix }\end{DoxyParamCaption})}
+
+This function calculates G\+EM 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & dereference for matrix with the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+coefficient for making triangle shape
+
+n+1 for matching with right side of matrix
+
+after previews loop it have to be 0, if it isn\textquotesingle{}t \mbox{\Hypertarget{calcilation_8h_aa355c9435e94a5736668a6cc23b446c8}\label{calcilation_8h_aa355c9435e94a5736668a6cc23b446c8}} 
+\index{calcilation.\+h@{calcilation.\+h}!root@{root}}
+\index{root@{root}!calcilation.\+h@{calcilation.\+h}}
+\subsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily int root (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{matrix,  }\item[{std\+::vector$<$ double $>$ \&}]{roots }\end{DoxyParamCaption})}
+
+This function returns the real roots of the matrix 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & dereference for matrix with the data \\
+\hline
+{\em roots} & vector of roots of the matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+making root and beginning on the end
+
+making root and beginning on the end \mbox{\Hypertarget{calcilation_8h_a015e157d4ea7fc8050e21c0da0f20348}\label{calcilation_8h_a015e157d4ea7fc8050e21c0da0f20348}} 
+\index{calcilation.\+h@{calcilation.\+h}!what\+To\+Save@{what\+To\+Save}}
+\index{what\+To\+Save@{what\+To\+Save}!calcilation.\+h@{calcilation.\+h}}
+\subsubsection{\texorpdfstring{what\+To\+Save()}{whatToSave()}}
+{\footnotesize\ttfamily int what\+To\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function asks about saving requirements \begin{DoxyReturn}{Returns}
+returns number which says what to save (1-\/gem, 2-\/determinant, 4-\/ roots, theirs sums says combinatoins of them) 
+\end{DoxyReturn}

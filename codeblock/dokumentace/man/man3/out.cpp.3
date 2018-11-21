@@ -1,0 +1,73 @@
+.TH "out.cpp" 3 "Sun Dec 17 2017" "Version 1.3" "Maticove operace Kvi0029" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+out.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'funkce\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <sstream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char \fBwhereToSaveFinalSolution\fP ()"
+.br
+.ti -1c
+.RI "void \fBprepareString\fP (std::string &out, char where, int what, long int &determ, std::vector< std::vector< double > > &triangle, std::vector< std::vector< double > > &matrix, std::vector< double > &roots)"
+.br
+.ti -1c
+.RI "int \fBmakeFinalSolution\fP (std::string &out, std::string \fBoutFileName\fP, char where)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int makeFinalSolution (std::string & out, std::string outFileName, char where)"
+
+.SS "void prepareString (std::string & out, char where, int what, long int & determ, std::vector< std::vector< double > > & triangle, std::vector< std::vector< double > > & matrix, std::vector< double > & roots)"
+This function prepares the string 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP string with all information will be saved 
+.br
+\fIwhere\fP char which tells where to save (T- terminal, C-csv file, H-html file) 
+.br
+\fIwhat\fP int which says what to save (1-gem, 2-determinant, 4- roots, theirs sums says combinatoins of them) 
+.br
+\fIdeterm\fP variable with determinant 
+.br
+\fItriangle\fP triangle shape of matrix 
+.br
+\fImatrix\fP matrix with diagonal shape 
+.br
+\fIroots\fP vector of roots 
+.RE
+.PP
+CSV branch
+.PP
+HTML branch
+.PP
+terminal branch 
+.SS "char whereToSaveFinalSolution ()"
+This function determines the final saving location* 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Maticove operace Kvi0029 from the source code\&.

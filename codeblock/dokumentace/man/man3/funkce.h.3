@@ -1,0 +1,241 @@
+.TH "funkce.h" 3 "Sun Dec 17 2017" "Version 1.3" "Maticove operace Kvi0029" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+funkce.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <vector>\fP
+.br
+\fC#include <string>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmenu\fP ()"
+.br
+.ti -1c
+.RI "char \fBodkudCtu\fP ()"
+.br
+.ti -1c
+.RI "void \fBfooter\fP ()"
+.br
+.ti -1c
+.RI "void \fBvelikostMatice\fP (int &rows, int &columns)"
+.br
+.ti -1c
+.RI "void \fBmakeMatrix\fP (const int &rows, const int &columns, std::vector< std::vector< double > > &matrix)"
+.br
+.ti -1c
+.RI "std::string \fBinFileName\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBoverPriponu\fP (std::string &name)"
+.br
+.ti -1c
+.RI "char \fBfileDelimiterFunction\fP (char &delimiter)"
+.br
+.ti -1c
+.RI "void \fBfileBranch\fP (std::vector< std::vector< double > > &matrix)"
+.br
+.ti -1c
+.RI "int \fBterminalFillMatrix\fP (std::vector< std::vector< double > > &matrix)"
+.br
+.ti -1c
+.RI "void \fBterminalBranch\fP (std::vector< std::vector< double > > &matrix)"
+.br
+.ti -1c
+.RI "void \fBprintMatrix\fP (std::vector< std::vector< double > > &matrix)"
+.br
+.ti -1c
+.RI "void \fBfileParseSizeOfMatrix\fP (std::string &line, int &errFlag, char &delimiter, int &rows, int &columns)"
+.br
+.ti -1c
+.RI "void \fBfileFillLineOfMatrix\fP (std::string &line, std::vector< std::vector< double > > &matrix, const int &row, char &delimiter)"
+.br
+.ti -1c
+.RI "int \fBfileRead\fP (std::string &filename, int &errFlag, char &delimiter, std::vector< std::vector< double > > &matrix)"
+.br
+.ti -1c
+.RI "std::string \fBoutFileName\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void fileBranch (std::vector< std::vector< double > > & matrix)"
+This function manages other functions while loading from the file 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference of matrix with the data 
+.RE
+.PP
+
+.SS "char fileDelimiterFunction (char & delimiter)"
+This function discovers the delimiter used in the csv file 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdelimiter\fP empty variable for save delimiter 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+delimiter 
+.RE
+.PP
+
+.SS "void fileFillLineOfMatrix (std::string & line, std::vector< std::vector< double > > & matrix, const int & row, char & delimiter)"
+This function loads one line from the file and inserts it into the matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIline\fP char line of matrix got from \&.csv file 
+.br
+\fImatrix\fP dereference of matrix with the data 
+.br
+\fIrow\fP number of row in matrix (index bagin on 0) 
+.br
+\fIdelimiter\fP delimiter char 
+.RE
+.PP
+
+.SS "void fileParseSizeOfMatrix (std::string & line, int & errFlag, char & delimiter, int & rows, int & columns)"
+This function loads the size of required matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIline\fP one line of matrix from \&.csv file 
+.br
+\fIerrFlag\fP flag reporting errors 
+.br
+\fIdelimiter\fP delimiter char 
+.br
+\fIrows\fP number of rows for required matrix 
+.br
+\fIcolumns\fP number of columns for required matrix 
+.RE
+.PP
+
+.SS "int fileRead (std::string & filename, int & errFlag, char & delimiter, std::vector< std::vector< double > > & matrix)"
+This function manages file loading 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP name of the opened file 
+.br
+\fIerrFlag\fP flag reporting errors 
+.br
+\fIdelimiter\fP delimiter char 
+.br
+\fImatrix\fP dereference of matrix with the data 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+0 for success, 1 for error 
+.RE
+.PP
+unused line for spacing 
+.SS "void footer ()"
+
+.SS "std::string inFileName ()"
+This function enters the input file name 
+.PP
+\fBReturns:\fP
+.RS 4
+returns name of input file 
+.RE
+.PP
+
+.SS "void makeMatrix (const int & rows, const int & columns, std::vector< std::vector< double > > & matrix)"
+This function creates matrix of required size\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrows\fP number of rows for required matrix 
+.br
+\fIcolumns\fP number of columns for required matrix 
+.br
+\fImatrix\fP dereference for matrix with the data 
+.RE
+.PP
+
+.SS "void menu ()"
+Entrance menu Funkce vypise prvotni hlavicku do terminalu 
+.SS "char odkudCtu ()"
+This function returns the input stream 
+.PP
+\fBReturns:\fP
+.RS 4
+returns T for terminal input, F for file input, E for exit and X for error 
+.RE
+.PP
+
+.SS "std::string outFileName ()"
+This function enters the output file name 
+.PP
+\fBReturns:\fP
+.RS 4
+0 for success, 1 for error 
+.RE
+.PP
+
+.SS "std::string overPriponu (std::string & name)"
+This function verifies the sufix and adds it if needed 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP filename 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+filename with the sufix 
+.RE
+.PP
+dynamic allocated variable, because I can 
+.SS "void printMatrix (std::vector< std::vector< double > > & matrix)"
+This function print matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference of matrix with the data 
+.RE
+.PP
+
+.SS "void terminalBranch (std::vector< std::vector< double > > & matrix)"
+This function manages other functions while loading from the terminal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference of matrix with the data 
+.RE
+.PP
+
+.SS "int terminalFillMatrix (std::vector< std::vector< double > > & matrix)"
+This function loads numbers from terminal and saves them into the matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImatrix\fP dereference of matrix with the data 
+.RE
+.PP
+
+.SS "void velikostMatice (int & rows, int & columns)"
+This function loads size of the matrix from the terminal\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrows\fP number of rows for required matrix 
+.br
+\fIcolumns\fP number of columns for required matrix 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Maticove operace Kvi0029 from the source code\&.

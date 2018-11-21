@@ -1,0 +1,3 @@
+/home/kvitajin/CLionProjects/vsb/pr/cv5/ppr4_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kvitajin/CLionProjects/vsb/pr/cv5/ppr4_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kvitajin/CLionProjects/vsb/pr/cv5/ppr4_2/cmake-build-debug/CMakeFiles/ppr4_2.dir
